@@ -1,0 +1,15 @@
+<section class="front-skills">
+  <div class="container">
+    <h2>Why should I debate?</h2>
+    <p>For starters, you'll learn...</p>
+    <div class="row">
+      {{ range (where .Data.Pages "Section" "front-skills").ByParam "rank" }}
+      <div class="col-md-4">
+        <i class="fas {{ .Params.Icon }} fa-5x"></i>
+        <h3>{{ with .Params.Title }}{{ . | safeHTML }}{{ end }}</h3>
+        {{ .Content }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

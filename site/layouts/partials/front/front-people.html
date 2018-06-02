@@ -1,0 +1,15 @@
+<section class="front-people">
+  <div class="container">
+    <h2>{{ .Params.Title }}</h2>
+    <p>{{ .Content }}</p>
+    <div class="row">
+      {{ range (where .Data.Pages "Section" "front-people").ByParam "rank" }}
+      <div class="col-md-4">
+        <i class="fas {{ .Params.Icon }} fa-5x"></i>
+        <h3>{{ with .Params.Title }}{{ . | safeHTML }}{{ end }}</h3>
+        {{ .Content }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
