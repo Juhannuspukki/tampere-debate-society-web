@@ -18,6 +18,12 @@ body {
   .front-hero .jumbotron {
     opacity: .8; }
 
+.icon-element {
+  margin-bottom: 48px; }
+
+.section-header {
+  margin-bottom: 64px; }
+
 .testclass {
   display: block; }
 

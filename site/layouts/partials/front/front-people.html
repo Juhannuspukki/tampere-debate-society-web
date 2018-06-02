@@ -1,10 +1,12 @@
 <section class="front-people">
   <div class="container">
-    <h2>{{ .Params.Title }}</h2>
-    <p>{{ .Content }}</p>
+    <div class="section-header">
+      <h2>Still not convinced?</h2>
+      <p>You'll also:</p>
+    </div>
     <div class="row">
       {{ range (where .Data.Pages "Section" "front-people").ByParam "rank" }}
-      <div class="col-md-4">
+      <div class="col-md-4 icon-element">
         <i class="fas {{ .Params.Icon }} fa-5x"></i>
         <h3>{{ with .Params.Title }}{{ . | safeHTML }}{{ end }}</h3>
         {{ .Content }}
