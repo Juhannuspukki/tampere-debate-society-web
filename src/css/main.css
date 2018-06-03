@@ -7,7 +7,7 @@ footer {
 
 body {
   font-size: 1em;
-  text-align: center;
+  text-align: justify;
   min-height: 100%;
   color: #0b0b1d;
   margin: 0; }
@@ -16,31 +16,58 @@ body {
   background: center no-repeat;
   background-size: cover; }
   .front-hero .jumbotron {
+    text-align: center;
     opacity: .8; }
 
 .icon-element {
-  margin-bottom: 48px; }
+  margin-bottom: 48px;
+  text-align: center; }
 
 .section-header {
-  margin-bottom: 64px; }
+  margin-bottom: 64px;
+  text-align: center; }
 
-.testclass {
-  display: block; }
+.front-join, .front-people, .front-skills {
+  padding-top: 0; }
+
+.front-whatis .whatis-description {
+  text-align: justify; }
+
+.front-whatis .right, .front-whatis .left {
+  font-size: .71em;
+  padding: 8px;
+  margin: 2px 0; }
+
+.front-whatis .right {
+  color: #fff;
+  background-color: #0b0b1d;
+  text-align: right;
+  border-radius: 10px 0 0 10px; }
+
+.front-whatis .left {
+  text-align: left;
+  border: 2px #0b0b1d solid;
+  border-radius: 0 10px 10px 0; }
+
+.front-whatis .hierarchy {
+  margin-bottom: 12px; }
 
 .navbar {
-  background-color: #0b0b1d;
-  font-family: "Graduate", serif; }
+  background-color: #0b0b1d; }
   .navbar .navbar-brand {
     font-size: 1.75em;
     text-align: center; }
     .navbar .navbar-brand .brand-text {
+      font-family: "Graduate", serif;
       float: right;
       color: #0b0b1d;
       margin-left: -48px; }
     .navbar .navbar-brand .brand-img {
       height: 80px; }
-  .navbar .nav-link:hover {
-    color: #0b0b1d; }
+  .navbar .nav-link {
+    font-family: "Graduate", serif; }
+    .navbar .nav-link:hover {
+      color: #0b0b1d; }
 
 .smallcontainer {
   max-width: 576px; }
@@ -51,7 +78,7 @@ h1, h2, h3 {
   font-family: "Graduate", serif;
   text-align: center; }
 
-p {
+p, div {
   font-family: "Montserrat", sans-serif;
   letter-spacing: -0.5px; }
 
