@@ -40,8 +40,20 @@ body {
   text-align: center;
 }
 
-.front-join, .front-people, .front-skills {
+.front-join, .front-people, .front-skills, .steps {
   padding-top: 0;
+}
+
+.steps {
+  .number {
+    border-radius: 50%;
+    color: #fff;
+    font-family: $graduate;
+    line-height: 35px;
+    margin: 0 auto 12px auto;
+    width: 35px;
+    background-color: $dark-color;
+}
 }
 
 .flex-container {

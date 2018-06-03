@@ -27,8 +27,17 @@ body {
   margin-bottom: 64px;
   text-align: center; }
 
-.front-join, .front-people, .front-skills {
+.front-join, .front-people, .front-skills, .steps {
   padding-top: 0; }
+
+.steps .number {
+  border-radius: 50%;
+  color: #fff;
+  font-family: "Graduate", serif;
+  line-height: 35px;
+  margin: 0 auto 12px auto;
+  width: 35px;
+  background-color: #0b0b1d; }
 
 .flex-container {
   display: flex; }
