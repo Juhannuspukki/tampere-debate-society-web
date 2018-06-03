@@ -1,8 +1,20 @@
 {{ define "main" }}
 
 <section class="about">
-  <div class="container smallcontainer">
-    {{ .Content }}
+  <div class="container">
+    <h1>{{ with .Params.Title }}{{ . | safeHTML }}{{ end }}<br><br></h1>
+    <div class="row">
+      <div class="col-md-4 icon-element download-pdf">
+        <a href="pdf/Guide to debating with UTA Debate Society.pdf">
+        <i class="fas fa-file-pdf fa-5x"></i>
+        <h2>Click here</h2>
+        <p>Download the PDF</p>
+        </a>
+      </div>
+      <div class="col-md-8">
+        {{ .Content }}
+      </div>
+    </div>
   </div>
 </section>
 

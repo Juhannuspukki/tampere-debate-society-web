@@ -194,3 +194,13 @@ footer {
     }
   }
 }
+
+.download-pdf {
+  a {
+    color: $dark-color;
+    i, svg, &:hover {
+      color: $theme-color;
+      text-decoration: none;
+    }
+  }
+}

@@ -142,3 +142,9 @@ footer {
     border-radius: 0 0 10px 10px; }
   .event-card .event-card-img {
     border-radius: 10px 10px 0 0; } }
+
+.download-pdf a {
+  color: #0b0b1d; }
+  .download-pdf a i, .download-pdf a svg, .download-pdf a:hover {
+    color: #fa5a06;
+    text-decoration: none; }
