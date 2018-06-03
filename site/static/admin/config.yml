@@ -18,22 +18,20 @@ collections:
       - {label: "Link", name: "link", widget: "string"}
       - {label: "Image description", name: "alt", widget: "string"}
   - name: "front-skills" # Used in routes, e.g., /admin/collections/blog
-      label: "Skills (front page)" # Used in the UI
-      folder: "site/content/front-skills" # The path to the folder where the documents are stored
-      create: false # Allow users to create new documents in this collection
-      slug: "{{ .Slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-      fields: # The fields for each document, usually in front matter
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Icon", name: "icon", widget: "string"}
-        - {label: "Rank", name: "rank", widget: "number"}
+    label: "Skills (front page)" # Used in the UI
+    folder: "site/content/front-skills" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    slug: "{{ .Slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Icon", name: "icon", widget: "string"}
+      - {label: "Rank", name: "rank", widget: "number"}
   - name: "front-people" # Used in routes, e.g., /admin/collections/blog
-      label: "People (front page)" # Used in the UI
-      folder: "site/content/front-people" # The path to the folder where the documents are stored
-      create: false # Allow users to create new documents in this collection
-      slug: "{{ .Slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-      fields: # The fields for each document, usually in front matter
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Icon", name: "icon", widget: "string"}
-        - {label: "Rank", name: "rank", widget: "number"}
-
-
+    label: "People (front page)" # Used in the UI
+    folder: "site/content/front-people" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    slug: "{{ .Slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Icon", name: "icon", widget: "string"}
+      - {label: "Rank", name: "rank", widget: "number"}
