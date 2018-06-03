@@ -53,21 +53,27 @@ body {
 }
 
 .event-card {
+  margin-bottom: 48px;
   .event-card-content {
     text-align: center;
     border: 2px $dark-color solid;
     border-radius: 0 10px 10px 0;
     border-left: none;
+    padding: 12px;
     .linkbutton {
       background-color: $dark-color;
       border: 1px $dark-color solid;
       width: 120px;
       margin: 0 auto 12px auto;
+      &:hover {
+        background-color: transparent;
+        color: $dark-color;
+      }
     }
   }
   .event-card-img {
     border-radius: 10px 0 0 10px;
-    min-height: 290px;
+    min-height: 200px;
     background: no-repeat;
     background-size: cover;
   }

@@ -36,22 +36,27 @@ body {
     display: flex;
     flex-direction: column; }
 
-.event-card .event-card-content {
-  text-align: center;
-  border: 2px #0b0b1d solid;
-  border-radius: 0 10px 10px 0;
-  border-left: none; }
-  .event-card .event-card-content .linkbutton {
-    background-color: #0b0b1d;
-    border: 1px #0b0b1d solid;
-    width: 120px;
-    margin: 0 auto 12px auto; }
-
-.event-card .event-card-img {
-  border-radius: 10px 0 0 10px;
-  min-height: 290px;
-  background: no-repeat;
-  background-size: cover; }
+.event-card {
+  margin-bottom: 48px; }
+  .event-card .event-card-content {
+    text-align: center;
+    border: 2px #0b0b1d solid;
+    border-radius: 0 10px 10px 0;
+    border-left: none;
+    padding: 12px; }
+    .event-card .event-card-content .linkbutton {
+      background-color: #0b0b1d;
+      border: 1px #0b0b1d solid;
+      width: 120px;
+      margin: 0 auto 12px auto; }
+      .event-card .event-card-content .linkbutton:hover {
+        background-color: transparent;
+        color: #0b0b1d; }
+  .event-card .event-card-img {
+    border-radius: 10px 0 0 10px;
+    min-height: 200px;
+    background: no-repeat;
+    background-size: cover; }
 
 .front-whatis .whatis-description {
   text-align: justify; }
