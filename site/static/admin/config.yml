@@ -6,15 +6,34 @@ publish_mode: editorial_workflow
 # This line should *not* be indented
 media_folder: "site/static/images" # Media files will be stored in the repo under images/uploads
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "site/content/blog" # The path to the folder where the documents are stored
+  - name: "events" # Used in routes, e.g., /admin/collections/blog
+    label: "Events" # Used in the UI
+    folder: "site/content/events" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "YYYY-MM-DD.md" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "date"}
+      - {label: "Image", name: "banner", widget: "image"}
+      - {label: "Link", name: "link", widget: "string"}
+      - {label: "Image description", name: "alt", widget: "string"}
+  - name: "front-skills" # Used in routes, e.g., /admin/collections/blog
+      label: "Skills (front page)" # Used in the UI
+      folder: "site/content/front-skills" # The path to the folder where the documents are stored
+      create: false # Allow users to create new documents in this collection
+      slug: "{{ .Slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+      fields: # The fields for each document, usually in front matter
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Icon", name: "icon", widget: "string"}
+        - {label: "Rank", name: "rank", widget: "number"}
+  - name: "front-people" # Used in routes, e.g., /admin/collections/blog
+      label: "People (front page)" # Used in the UI
+      folder: "site/content/front-people" # The path to the folder where the documents are stored
+      create: false # Allow users to create new documents in this collection
+      slug: "{{ .Slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+      fields: # The fields for each document, usually in front matter
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Icon", name: "icon", widget: "string"}
+        - {label: "Rank", name: "rank", widget: "number"}
+
+
