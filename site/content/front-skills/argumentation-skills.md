@@ -1,6 +1,6 @@
 ---
 title: Argumentation<br>skills
-icon: fa-comments
+icon: fa-chess
 rank: 1
 ---
 
