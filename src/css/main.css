@@ -42,6 +42,11 @@ body {
   .navbar .nav-link:hover {
     color: #0b0b1d; }
 
+.smallcontainer {
+  max-width: 576px; }
+  .smallcontainer p {
+    text-align: justify; }
+
 h1, h2, h3 {
   font-family: "Graduate", serif;
   text-align: center; }

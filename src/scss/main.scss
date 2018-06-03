@@ -62,8 +62,11 @@ body {
   }
 }
 
-.benefits {
-
+.smallcontainer {
+  max-width: 576px;
+  p {
+    text-align: justify;
+  }
 }
 
 h1, h2, h3 {
