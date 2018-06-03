@@ -1,17 +1,16 @@
 <footer>
   <div class="container">
     <div class="row">
+      {{ range (where .Data.Pages "Section" "footer").ByParam "rank" }}
       <div class="col-md-6">
-        <h2>Join us</h2>
-        <p>Weekly Meetings<br>
-          Tuesday 17:00<br>
-          Pinni B, room 5078<br>
-          University of Tampere
-        </p>
+        <h3>{{ with .Params.Title }}{{ . | safeHTML }}{{ end }}</h3>
+        {{ .Content }}
       </div>
-      <div class="col-md-6">
-        <h2>Follow us</h2>
-      </div>
+      {{ end }}
     </div>
+    <p>Hand logo by @renalyx. Domain from @varesa.<br>Hand-made by @Juhannuspukki.</p>
+    <a href="https://www.netlify.com">
+      <img src="https://www.netlify.com/img/global/badges/netlify-dark.svg">
+    </a>
   </div>
 </footer>

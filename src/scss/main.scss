@@ -86,6 +86,9 @@ footer {
   background-color: $dark-color;
   color: white;
   text-align: center;
+  .row {
+    margin-bottom: 64px;
+  }
 }
 
 
