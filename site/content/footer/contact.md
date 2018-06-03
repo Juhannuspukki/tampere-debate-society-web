@@ -1,6 +1,6 @@
 ---
 title: Join us
-
+rank: 2
 ---
 
 Weekly Meetings<br>
