@@ -30,6 +30,29 @@ body {
 .front-join, .front-people, .front-skills {
   padding-top: 0; }
 
+.flex-container {
+  display: flex; }
+  .flex-container .flex-inner {
+    display: flex;
+    flex-direction: column; }
+
+.event-card .event-card-content {
+  text-align: center;
+  border: 2px #0b0b1d solid;
+  border-radius: 0 10px 10px 0;
+  border-left: none; }
+  .event-card .event-card-content .linkbutton {
+    background-color: #0b0b1d;
+    border: 1px #0b0b1d solid;
+    width: 120px;
+    margin: 0 auto 12px auto; }
+
+.event-card .event-card-img {
+  border-radius: 10px 0 0 10px;
+  min-height: 290px;
+  background: no-repeat;
+  background-size: cover; }
+
 .front-whatis .whatis-description {
   text-align: justify; }
 
@@ -101,4 +124,9 @@ footer {
       color: #0b0b1d;
       margin-left: -36px; }
     .navbar .navbar-brand .brand-img {
-      height: 60px; } }
+      height: 60px; }
+  .event-card .event-card-content {
+    border: 2px #0b0b1d solid;
+    border-radius: 0 0 10px 10px; }
+  .event-card .event-card-img {
+    border-radius: 10px 10px 0 0; } }

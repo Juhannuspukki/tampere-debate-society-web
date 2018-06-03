@@ -1,6 +1,6 @@
 ---
 title: Follow us
-rank: 1
+rank: 2
 ---
 
 Weekly Meetings<br>
