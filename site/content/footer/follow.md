@@ -3,7 +3,6 @@ title: Follow us
 rank: 2
 ---
 
-Weekly Meetings<br>
-Tuesday 17:00<br>
-Pinni B, room 5078<br>
-University of Tampere
+<a href="https://www.facebook.com/groups/tamperedebatesociety/" class="facebook-linkbutton">
+    <i class="fab fa-facebook-square fa-9x"></i>
+</a>

@@ -126,6 +126,8 @@ footer {
   text-align: center; }
   footer .row {
     margin-bottom: 64px; }
+  footer .facebook-linkbutton {
+    color: #3b5998; }
 
 @media (max-width: 767px) {
   .navbar .navbar-brand {
