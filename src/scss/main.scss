@@ -50,7 +50,7 @@ body {
   text-align: center;
 }
 
-.front-join, .front-people, .front-skills, .steps {
+.front-join, .front-people, .front-skills, .steps, .about-segment {
   padding-top: 0;
 }
 
@@ -153,6 +153,18 @@ body {
 .smallcontainer {
   max-width: 576px;
   p {
+    text-align: justify;
+  }
+}
+
+.about-icon, .about-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    margin: 0;
+  }
+  h2 {
     text-align: justify;
   }
 }

@@ -5,5 +5,8 @@
     {{ .Content }}
   </div>
 </section>
+{{ range (.Data.Pages).ByParam "Rank" }}
+  {{ partial "about/about-segment.html" . }}
+{{ end }}
 
 {{ end }}

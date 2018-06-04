@@ -32,7 +32,8 @@ gulp.task("sass", () => {
     .pipe(sass.sync().on("error", sass.logError))
     .pipe(concat("main.min.css"))
     .pipe(sass({outputStyle: "compressed"}))
-    .pipe(gulp.dest(".dist/css"));
+    .pipe(gulp.dest("dist/css"))
+    .pipe(browserSync.stream());
 });
 
 // Compile Javascript
