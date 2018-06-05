@@ -4,12 +4,11 @@
   <div class="container">
     <h1>Events<br><br></h1>
     {{ range .Data.Pages }}
-    {{ $date := .Date }}
     <div class="row flex-container event-card">
       <div class="col-md-5 flex-inner event-card-img" style="background-image: url('{{ .Params.Banner }}')"></div>
       <div class="col-md-7 flex-inner event-card-content">
         <h2>{{ .Params.Title}}</h2>
-        <p>{{ $date.Format "January 2, 2006" }}</p>
+        <p>{{ .Date.Format "January 2, 2006" }}</p>
         <p>{{ .Summary }}</p>
         <a class="btn btn-primary linkbutton" href="{{ .Params.Link }}" role="button">Read more</a>
       </div>
