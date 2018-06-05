@@ -1,5 +1,5 @@
 ---
-title: Welcome to Tampere Debate Society!
+title: WUDC debating in Tampere
 background: images/näsinneula.jpg
 ---
 

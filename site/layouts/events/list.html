@@ -2,7 +2,7 @@
 
 <section class="events-hero">
   <div class="container">
-    <h1>Events<br><br></h1>
+    <h1>{{ .Params.Title }}</h1>
     {{ range .Data.Pages }}
     <div class="row flex-container event-card">
       <div class="col-md-5 flex-inner event-card-img" style="background-image: url('{{ .Params.Banner }}')"></div>

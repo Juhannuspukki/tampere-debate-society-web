@@ -6,11 +6,7 @@
     </div>
     <div class="row">
       {{ range (where .Data.Pages "Section" "front-people").ByParam "rank" }}
-      <div class="col-md-4 icon-element">
-        <i class="fas {{ .Params.Icon }} fa-5x"></i>
-        <h3>{{ with .Params.Title }}{{ . | safeHTML }}{{ end }}</h3>
-        {{ .Content }}
-      </div>
+        {{ partial "icon-element.html" . }}
       {{ end }}
     </div>
   </div>

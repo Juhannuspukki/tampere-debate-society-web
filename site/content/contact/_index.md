@@ -1,8 +1,9 @@
 ---
+title: Contact
 
 ---
 
-# Contact<br><br>
+# Contact
 
 ## Contact details
 

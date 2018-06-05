@@ -1,5 +1,5 @@
 ---
-title: Debating<br><br>
+title: Debating
 
 ---
 
