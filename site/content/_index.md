@@ -1,6 +1,7 @@
 ---
 title: WUDC debating in Tampere
 background: images/näsinneula.jpg
+description: We are a Tampere University based student organization that specializes in debating. We meet every Tuesday at 17.00 at PinniB, room number 5078.
 ---
 
 Do you like speaking publicly in a foreign language about things you know nothing about?
