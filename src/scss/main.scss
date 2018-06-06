@@ -131,15 +131,16 @@ body {
   background-color: $dark-color;
   .navbar-brand {
     font-size: 1.75em;
-    text-align: center;
+    text-align: left;
     .brand-text {
       font-family: $graduate;
       float: right;
       color: $dark-color;
-      margin-left: -48px
+      margin-left: 12px
     }
     .brand-img {
       height: 80px;
+      fill: $dark-color;
     }
   }
   .nav-link {
