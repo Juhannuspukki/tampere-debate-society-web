@@ -1,6 +1,6 @@
 ---
 title: Joensuu Mini 2018
-date: '2018-09-05'
+date: '2018-08-31'
 eventdate: '2018-10-13'
 banner: /images/joensuumini2018.jpg
 link: 'https://www.facebook.com/events/2210201439009988/'
