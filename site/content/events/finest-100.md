@@ -1,5 +1,6 @@
 ---
 title: FinEst 100
+date: 2018-03-24
 eventdate: 2018-03-24
 banner: images/finest-100.jpg
 link: 'https://www.facebook.com/events/146269409503775/'

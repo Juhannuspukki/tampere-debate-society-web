@@ -1,5 +1,6 @@
 ---
 title: First of semester
+date: 2018-09-11
 eventdate: 2018-09-11
 banner: /images/fall.jpg
 link: https://www.facebook.com/groups/tamperedebatesociety/permalink/10155992329859071/
