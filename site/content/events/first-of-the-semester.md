@@ -1,6 +1,6 @@
 ---
 title: The First Debate / Newcomer's Evening
-date: '2018-08-26'
+date: '2018-09-05'
 eventdate: 2018-09-11T00:00:00.000Z
 banner: /images/fall.jpg
 link: >-
