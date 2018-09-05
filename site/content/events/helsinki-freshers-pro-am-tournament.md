@@ -1,9 +1,9 @@
 ---
 title: Helsinki Freshers' Pro-Am Tournament
-date: 2018-09-05
-eventdate: 2018-09-29
+date: '2018-09-04'
+eventdate: 2018-09-29T00:00:00.000Z
 banner: /images/helsinkiproam.jpg
-link: https://www.facebook.com/events/2642562352634920/
+link: 'https://www.facebook.com/events/2642562352634920/'
 alt: helsinki-freshers-pro-am-tournament
 ---
 New to debating?
