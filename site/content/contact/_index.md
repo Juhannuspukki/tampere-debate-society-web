@@ -7,5 +7,5 @@ description: The easiest way of contacting us is probably either facebook or sen
 
 ## Contact details
 
-If you are interested in chatting with us or participating in the events, join our Facebook group [here!](https://www.facebook.com/groups/tamperedebatesociety/)
-If you have more official business, our official board email is <mailto:tamperedebating@gmail.com>.
+The Facebook group is used for communication. Please join the group if you want to stay informed about our events [here!](https://www.facebook.com/groups/tamperedebatesociety/)
+If you have more official business, you can reach our board by sending an email to <mailto:tamperedebating@gmail.com>.
