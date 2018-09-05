@@ -15,6 +15,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "date"}
+      - {label: "Event Date", name: "eventdate", widget: "date"}
       - {label: "Image", name: "banner", widget: "image"}
       - {label: "Link", name: "link", widget: "string"}
       - {label: "Image description", name: "alt", widget: "string"}
@@ -28,6 +29,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Icon", name: "icon", widget: "string"}
       - {label: "Rank", name: "rank", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "front-people" # Used in routes, e.g., /admin/collections/blog
     label: "People (front page)" # Used in the UI
     folder: "site/content/front-people" # The path to the folder where the documents are stored
@@ -37,3 +39,14 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Icon", name: "icon", widget: "string"}
       - {label: "Rank", name: "rank", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "front-whatis" # Used in routes, e.g., /admin/collections/blog
+    label: "What is debating (front page)" # Used in the UI
+    folder: "site/content/front-whatis" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    slug: "{{ .Slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Icon", name: "icon", widget: "string"}
+      - {label: "Rank", name: "rank", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
