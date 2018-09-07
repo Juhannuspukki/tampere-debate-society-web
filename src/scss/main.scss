@@ -204,11 +204,10 @@ footer {
   .navbar {
     .navbar-brand {
       font-size: 1.25em;
-      text-align: center;
+      text-align: left;
       .brand-text {
         float: right;
         color: $dark-color;
-        margin-left: -36px;
       }
       .brand-img {
         height: 60px;
