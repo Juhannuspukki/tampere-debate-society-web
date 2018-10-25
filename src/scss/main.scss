@@ -1,12 +1,12 @@
 @import "constants";
 @import "navbar";
+@import "footer";
 
 html {
   height: 100%;
 }
 
-section,
-footer {
+section {
   padding: 128px 0;
 }
 
@@ -151,18 +151,6 @@ p, div {
   letter-spacing: -0.5px;
 }
 
-footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: $dark-color;
-  color: white;
-  text-align: center;
-  .facebook-linkbutton {
-    color: #3b5998;
-  }
-}
-
 @media (max-width: 767px) {
   .event-card {
     .event-card-content {
@@ -183,4 +171,8 @@ footer {
       text-decoration: none;
     }
   }
+}
+
+.not-found {
+  padding: calc(3.25rem + 8rem) 0 8rem;
 }

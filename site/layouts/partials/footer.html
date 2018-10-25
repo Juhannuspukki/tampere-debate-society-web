@@ -1,8 +1,8 @@
 <footer>
   <div class="container">
     <div class="row">
-      {{ range (where .Site.Pages "Section" "footer").ByParam "rank" }}
-      <div class="col-md-4">
+      {{ range (last 3 (where .Site.Pages "Section" "footer")).ByParam "rank" }}
+      <div class="col-md-4 footer-cell">
         <h3>{{ with .Params.Title }}{{ . | safeHTML }}{{ end }}</h3>
         {{ .Content }}
       </div>
