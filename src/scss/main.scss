@@ -1,8 +1,9 @@
 @import "constants";
 @import "navbar";
 @import "footer";
+@import "front";
 
-html {
+html, body {
   height: 100%;
 }
 
@@ -16,15 +17,6 @@ body {
   min-height: 100%;
   color: $dark-color;
   margin: 0;
-}
-
-.front-hero {
-  background: center no-repeat;
-  background-size: cover;
-  .jumbotron {
-    text-align: center;
-    opacity: .8;
-  }
 }
 
 .icon-element {
@@ -89,32 +81,6 @@ body {
     min-height: 200px;
     background: no-repeat;
     background-size: cover;
-  }
-}
-
-.front-whatis {
-  text-align: center;
-  .whatis-description {
-    text-align: justify;
-  }
-  .right, .left  {
-    font-size: .8em;
-    padding: 8px;
-    margin: 2px 0;
-  }
-  .right {
-    color: #fff;
-    background-color: $dark-color;
-    text-align: right;
-    border-radius: 10px 0 0 10px;
-  }
-  .left {
-    text-align: left;
-    border: 2px $dark-color solid;
-    border-radius: 0 10px 10px 0;
-  }
-  .hierarchy {
-    margin-bottom: 12px;
   }
 }
 

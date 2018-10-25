@@ -1,11 +1,5 @@
 ---
 title: Debating in Tampere
-background: images/näsinneula.jpg
+background: images/hero.jpeg
 description: We are a Tampere University based student organization that specializes in debating. We meet every Tuesday at 17.00 at PinniB, room number 5078.
 ---
-
-Would you like to be better at debating?
-
-Would you like to improve your critical thinking, argumentation and persuasion skills?
-
-Tampere Debate Society provides all this and much more. Come join our meetings in Pinni B5078 at the University of Tampere every Tuesday 5pm. No previous experience needed. See you there!
