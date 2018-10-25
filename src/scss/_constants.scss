@@ -1,0 +1,18 @@
+$montserrat: 'Montserrat', sans-serif;
+$graduate: 'Graduate', serif;
+$theme-color: #fa5a06;
+$dark-color: #0b0b1d;
+$dark-color-transparent: #0b0b1dcc;
+$light-color: #aaa;
+$white-color-transparent: #ffffffcc;
+
+
+@font-face {
+  font-family: Montserrat;
+  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Graduate;
+  src: url('/fonts/Graduate-Regular.ttf') format('truetype');
+}

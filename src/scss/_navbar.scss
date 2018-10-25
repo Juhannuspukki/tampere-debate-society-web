@@ -1,0 +1,53 @@
+.navbar.navbar-light {
+  padding: 0 1rem;
+  background-color: $white-color-transparent;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  .navbar-brand {
+    font-size: 1.50em;
+    text-align: left;
+    .brand-text {
+      font-family: $graduate;
+      color: $dark-color;
+    }
+    .brand-img {
+      height: 80px;
+      fill: $dark-color;
+    }
+  }
+  .nav-link {
+    font-family: $graduate;
+    color: $dark-color-transparent;
+    padding: 1rem 0.75rem;
+    &:hover {
+      color: $dark-color;
+    }
+    &.active {
+      background: $dark-color;
+      color: $white-color-transparent;
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(20px);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar.navbar-light {
+    padding: 0;
+    .navbar-brand {
+      font-size: 1.25em;
+      padding: 0.5rem;
+      margin: 0;
+    }
+    .navbar-toggler {
+      margin: 0.5rem;
+    }
+    .nav-item {
+      border-top: 1px $dark-color-transparent solid;
+      text-align: center;
+      &:first-of-type {
+        border-top: none;
+      }
+    }
+  }
+}

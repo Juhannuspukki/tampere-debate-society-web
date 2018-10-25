@@ -1,18 +1,5 @@
-$montserrat: 'Montserrat', sans-serif;
-$graduate: 'Graduate', serif;
-$theme-color: #fa5a06;
-$dark-color: #0b0b1d;
-$light-color: #aaa;
-
-@font-face {
-  font-family: Montserrat;
-  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: Graduate;
-  src: url('/fonts/Graduate-Regular.ttf') format('truetype');
-}
+@import "constants";
+@import "navbar";
 
 html {
   height: 100%;
@@ -131,30 +118,6 @@ body {
   }
 }
 
-.navbar {
-  background-color: $dark-color;
-  .navbar-brand {
-    font-size: 1.75em;
-    text-align: left;
-    .brand-text {
-      font-family: $graduate;
-      float: right;
-      color: $dark-color;
-      margin-left: 12px
-    }
-    .brand-img {
-      height: 80px;
-      fill: $dark-color;
-    }
-  }
-  .nav-link {
-    font-family: $graduate;
-    &:hover {
-      color: $dark-color;
-    }
-  }
-}
-
 .smallcontainer {
   max-width: 576px;
   p {
@@ -201,19 +164,6 @@ footer {
 }
 
 @media (max-width: 767px) {
-  .navbar {
-    .navbar-brand {
-      font-size: 1.25em;
-      text-align: left;
-      .brand-text {
-        float: right;
-        color: $dark-color;
-      }
-      .brand-img {
-        height: 60px;
-      }
-    }
-  }
   .event-card {
     .event-card-content {
       border: 2px $dark-color solid;
