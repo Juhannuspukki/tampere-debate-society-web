@@ -2,6 +2,7 @@
 @import "navbar";
 @import "footer";
 @import "front";
+@import "about";
 
 html, body {
   height: 100%;
@@ -31,10 +32,6 @@ body {
 
 .front-join, .front-people, .front-skills, .steps, .about-segment {
   padding-top: 0;
-}
-
-.about {
-  padding-bottom: 48px;
 }
 
 .steps {
@@ -87,18 +84,6 @@ body {
 .smallcontainer {
   max-width: 576px;
   p {
-    text-align: justify;
-  }
-}
-
-.about-icon, .about-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  p {
-    margin: 0;
-  }
-  h2 {
     text-align: justify;
   }
 }
