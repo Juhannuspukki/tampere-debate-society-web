@@ -2,7 +2,8 @@
 
 <section class="events-hero">
   <div class="container">
-    <h1>{{ .Params.Title }}</h1>
+    <h1 id="upcoming-title">Upcoming events</h1>
+    <h1 class="hidden" id="past-title">Past events</h1>
     <div class="event-button-container">
       <div class="btn-group" role="group">
         <button type="button" class="btn btn-primary event-buttons event-active" id="button-left" onclick="activateUpcoming()">Upcoming</button>
@@ -30,6 +31,8 @@
       document.getElementById("button-right").classList.remove("event-active");
       document.getElementById("upcoming-events").classList.remove("hidden");
       document.getElementById("past-events").classList.add("hidden");
+      document.getElementById("upcoming-title").classList.remove("hidden");
+      document.getElementById("past-title").classList.add("hidden");
     }
 
     function activatePast() {
@@ -37,6 +40,8 @@
       document.getElementById("button-right").classList.add("event-active");
       document.getElementById("upcoming-events").classList.add("hidden");
       document.getElementById("past-events").classList.remove("hidden");
+      document.getElementById("upcoming-title").classList.add("hidden");
+      document.getElementById("past-title").classList.remove("hidden");
     }
   </script>
 </section>
