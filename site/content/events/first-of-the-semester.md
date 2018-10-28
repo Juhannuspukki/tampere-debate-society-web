@@ -1,6 +1,5 @@
 ---
 title: The First Debate / Newcomers' Evening
-date: '2018-09-05'
 eventdate: 2018-09-11T00:00:00.000Z
 banner: /images/newcomers_evening.jpg
 link: 'https://www.facebook.com/events/537971359983217/'

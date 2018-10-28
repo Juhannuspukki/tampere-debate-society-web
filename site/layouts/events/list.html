@@ -3,18 +3,42 @@
 <section class="events-hero">
   <div class="container">
     <h1>{{ .Params.Title }}</h1>
-    {{ range .Data.Pages }}
-    <div class="row flex-container event-card">
-      <div class="col-md-5 flex-inner event-card-img" style="background-image: url('{{ .Params.Banner }}')"></div>
-      <div class="col-md-7 flex-inner event-card-content">
-        <h2>{{ .Params.Title}}</h2>
-        <p>{{ dateFormat "January 2, 2006" .Params.eventdate }}</p>
-        <p>{{ .Summary | markdownify }}</p>
-        <a class="btn btn-primary linkbutton" href="{{ .Params.Link }}" role="button">Read more</a>
+    <div class="event-button-container">
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary event-buttons event-active" id="button-left" onclick="activateUpcoming()">Upcoming</button>
+        <button type="button" class="btn btn-primary event-buttons" id="button-right" onclick="activatePast()">Past</button>
       </div>
     </div>
-    {{ end }}
+    <div class="row event-card-list" id="upcoming-events">
+      {{ range ((.Data.Pages).ByParam "eventdate") }}
+        {{ if (time .Params.eventdate).After now }}
+          {{ partial "events/events-card.html" . }}
+        {{ end }}
+      {{ end }}
+    </div>
+    <div class="row event-card-list hidden" id="past-events">
+      {{ range ((.Data.Pages).ByParam "eventdate").Reverse }}
+        {{ if (time .Params.eventdate).Before now }}
+          {{ partial "events/events-card.html" . }}
+        {{ end }}
+      {{ end }}
+    </div>
   </div>
+  <script>
+    function activateUpcoming() {
+      document.getElementById("button-left").classList.add("event-active");
+      document.getElementById("button-right").classList.remove("event-active");
+      document.getElementById("upcoming-events").classList.remove("hidden");
+      document.getElementById("past-events").classList.add("hidden");
+    }
+
+    function activatePast() {
+      document.getElementById("button-left").classList.remove("event-active");
+      document.getElementById("button-right").classList.add("event-active");
+      document.getElementById("upcoming-events").classList.add("hidden");
+      document.getElementById("past-events").classList.remove("hidden");
+    }
+  </script>
 </section>
 
 {{ end }}

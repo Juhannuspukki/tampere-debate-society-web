@@ -1,6 +1,5 @@
 ---
 title: FINDA BP Nationals Championship 2018
-date: '2018-08-29'
 eventdate: '2018-10-27'
 banner: /images/findabpnationals_2018.jpg
 link: 'https://www.facebook.com/events/2026916917378971/'

@@ -3,6 +3,7 @@
 @import "footer";
 @import "front";
 @import "about";
+@import "events";
 
 html, body {
   height: 100%;
@@ -18,11 +19,6 @@ body {
   min-height: 100%;
   color: $dark-color;
   margin: 0;
-}
-
-.icon-element {
-  margin-bottom: 48px;
-  text-align: center;
 }
 
 .section-header {
@@ -54,33 +50,6 @@ body {
   }
 }
 
-.event-card {
-  margin-bottom: 48px;
-  .event-card-content {
-    text-align: center;
-    border: 2px $dark-color solid;
-    border-radius: 0 10px 10px 0;
-    border-left: none;
-    padding: 12px;
-    .linkbutton {
-      background-color: $dark-color;
-      border: 1px $dark-color solid;
-      width: 120px;
-      margin: 0 auto 12px auto;
-      &:hover {
-        background-color: transparent;
-        color: $dark-color;
-      }
-    }
-  }
-  .event-card-img {
-    border-radius: 10px 0 0 10px;
-    min-height: 200px;
-    background: no-repeat;
-    background-size: cover;
-  }
-}
-
 .smallcontainer {
   max-width: 576px;
   p {
@@ -101,18 +70,6 @@ p, div {
   font-family: $montserrat;
 }
 
-@media (max-width: 767px) {
-  .event-card {
-    .event-card-content {
-      border: 2px $dark-color solid;
-      border-radius: 0 0 10px 10px;
-    }
-    .event-card-img {
-      border-radius: 10px 10px 0 0;
-    }
-  }
-}
-
 .download-pdf {
   a {
     color: $dark-color;
@@ -121,6 +78,10 @@ p, div {
       text-decoration: none;
     }
   }
+}
+
+.hidden {
+  display: none;
 }
 
 .not-found {
