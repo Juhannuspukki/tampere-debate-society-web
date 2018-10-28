@@ -5,7 +5,7 @@
       <p>Allright, allright. Have a TL;DR:</p>
     </div>
     <div class="row">
-      {{ range (where .Site.Pages "Section" "debating-steps").ByParam "rank" }}
+      {{ range first 6 ((where .Site.Pages "Section" "debating-steps").ByParam "rank") }}
       <div class="col-md-4 icon-element">
         <p class="number">{{ .Params.Rank }}</p>
         <h3>{{ with .Params.Title }}{{ . | safeHTML }}{{ end }}</h3>

@@ -1,0 +1,27 @@
+.debating {
+  padding-bottom: 7rem;
+}
+
+.steps {
+  padding-bottom: 4rem;
+  .number {
+    border-radius: 25%;
+    color: #fff;
+    font-family: $graduate;
+    line-height: 35px;
+    margin: 0 auto 12px auto;
+    width: 35px;
+    background-color: $dark-color;
+  }
+}
+
+.download-pdf {
+  margin: 0;
+  a {
+    color: $dark-color;
+    i, svg, &:hover {
+      color: $theme-color;
+      text-decoration: none;
+    }
+  }
+}

@@ -4,6 +4,8 @@
 @import "front";
 @import "about";
 @import "events";
+@import "debating";
+@import "contact";
 
 html, body {
   height: 100%;
@@ -30,33 +32,6 @@ body {
   padding-top: 0;
 }
 
-.steps {
-  .number {
-    border-radius: 25%;
-    color: #fff;
-    font-family: $graduate;
-    line-height: 35px;
-    margin: 0 auto 12px auto;
-    width: 35px;
-    background-color: $dark-color;
-}
-}
-
-.flex-container {
-  display: flex;
-  .flex-inner {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.smallcontainer {
-  max-width: 576px;
-  p {
-    text-align: justify;
-  }
-}
-
 h1 {
   margin-bottom: 48px;
 }
@@ -68,16 +43,6 @@ h1, h2, h3 {
 
 p, div {
   font-family: $montserrat;
-}
-
-.download-pdf {
-  a {
-    color: $dark-color;
-    i, svg, &:hover {
-      color: $theme-color;
-      text-decoration: none;
-    }
-  }
 }
 
 .hidden {
