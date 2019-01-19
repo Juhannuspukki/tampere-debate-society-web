@@ -1,8 +1,8 @@
 ---
-banner: ../images/placeholder.png
-alt: Parsta
+banner: /images/female_default.png
 name: Tuuli Kankaala
 title: Secretary
-studies: 📐 Mathematics 📐
+studies: "\U0001F4D0 Mathematics \U0001F4D0"
 rank: 4
 ---
+
