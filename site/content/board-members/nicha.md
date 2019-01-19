@@ -1,8 +1,8 @@
 ---
-banner: ../images/placeholder.png
-alt: Parsta
+banner: /images/female_default.png
 name: Nicha Särkkä
 title: Member of the Board
-studies: 🏫 High School 🏫
+studies: "\U0001F3EB High School \U0001F3EB"
 rank: 6
 ---
+
