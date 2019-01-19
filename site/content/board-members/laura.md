@@ -1,8 +1,8 @@
 ---
 banner: /images/female_default.png
-name: Jenna Pitkälä
+name: Laura
 title: Member of the Board
 studies: '-'
-rank: '5'
+rank: 7
 ---
 
