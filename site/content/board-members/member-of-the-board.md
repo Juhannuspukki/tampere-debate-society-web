@@ -3,6 +3,6 @@ banner: /images/female_default.png
 name: Jenna Pitkälä
 title: Member of the Board
 studies: '-'
-rank: '10'
+rank: '5'
 ---
 
