@@ -1,4 +1,5 @@
 $montserrat: 'Montserrat', sans-serif;
+$montserrat-bold: 'Montserrat-Bold', sans-serif;
 $graduate: 'Graduate', serif;
 $theme-color: #fa5a06;
 $dark-color: #0b0b1d;
@@ -7,6 +8,11 @@ $light-color: #aaa;
 $white-color-transparent: #ffffffcc;
 $white-color: #fff;
 
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+}
 
 @font-face {
   font-family: Montserrat;

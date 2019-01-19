@@ -22,6 +22,11 @@ summaryLength = 50
         url = "/events"
         weight = 3
     [[menu.nav]]
+        identifier = "board"
+        name = "Board"
+        url = "/board"
+        weight = 4
+    [[menu.nav]]
         identifier = "contact"
         name = "Contact"
         url = "/contact"

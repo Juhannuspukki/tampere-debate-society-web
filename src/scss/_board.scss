@@ -1,0 +1,30 @@
+.small-container {
+  max-width: 576px;
+  p {
+    text-align: justify;
+  }
+}
+
+.board-card-inner {
+  margin-bottom: 4rem;
+  .board-card-img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10rem;
+    clip-path: circle(5rem at center);
+    -webkit-clip-path: circle(5rem at center);
+    margin-bottom: 1rem;
+  }
+
+  .board-card-content {
+    text-align: center;
+    .board-name {
+      font-size: 1.5rem;
+    }
+    .board-title {
+      font-size: 1rem;
+      font-family: $montserrat-bold;
+    }
+  }
+}

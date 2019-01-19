@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<section class="board">
+  <h1>{{ .Params.Title }}</h1>
+  <div class="container">
+    <div class="row">
+      {{ range (where .Site.Pages "Section" "board-members").ByParam "rank" }}
+        {{ partial "board/board-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+  <div class="container small-container">
+    {{ .Content }}
+  </div>
+</section>
+
+{{ end }}
