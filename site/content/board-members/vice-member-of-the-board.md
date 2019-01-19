@@ -1,8 +1,8 @@
 ---
 banner: /images/female_default.png
-name: Jaakko
+name: Laura
 title: Vice Member of the Board
 studies: '-'
-rank: '9'
+rank: '5'
 ---
 
