@@ -1,5 +1,5 @@
 ---
-banner: /images/female_default.png
+banner: /images/ella.png
 name: Ella Jonninen
 title: Vice President
 studies: "\U0001F3DB Political Sciences \U0001F3DB"
