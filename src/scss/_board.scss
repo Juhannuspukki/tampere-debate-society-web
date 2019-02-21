@@ -5,26 +5,35 @@
   }
 }
 
-.board-card-inner {
-  margin-bottom: 4rem;
-  .board-card-img {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 10rem;
-    clip-path: circle(5rem at center);
-    -webkit-clip-path: circle(5rem at center);
-    margin-bottom: 1rem;
+.board {
+  padding-top: 3rem;
+  .board-h1 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
   }
-
-  .board-card-content {
-    text-align: center;
-    .board-name {
-      font-size: 1.5rem;
+  .board-card-inner {
+    margin-bottom: 4rem;
+    .board-card-img {
+      position: relative;
+      overflow: hidden;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 10rem;
+      height: 10rem;
+      border: 2px solid $dark-color;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+      object-fit: cover;
     }
-    .board-title {
-      font-size: 1rem;
-      font-family: $montserrat-bold;
+    .board-card-content {
+      text-align: center;
+      .board-name {
+        font-size: 1.5rem;
+      }
+      .board-title {
+        font-size: 1rem;
+        font-family: $montserrat-bold;
+      }
     }
   }
 }

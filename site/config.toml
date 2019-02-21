@@ -8,7 +8,7 @@ summaryLength = 50
 [menu]
     [[menu.nav]]
         identifier = "about"
-        name = "About"
+        name = "About us"
         url = "/about"
         weight = 1
     [[menu.nav]]
@@ -21,11 +21,6 @@ summaryLength = 50
         name = "Events"
         url = "/events"
         weight = 3
-    [[menu.nav]]
-        identifier = "board"
-        name = "Board"
-        url = "/board"
-        weight = 4
     [[menu.nav]]
         identifier = "contact"
         name = "Contact"

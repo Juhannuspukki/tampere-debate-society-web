@@ -3,7 +3,7 @@
   background-color: $white-color-transparent;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
-  border-bottom: 1px solid $dark-color;
+  border-bottom: 2px solid $dark-color;
   .navbar-brand {
     font-size: 1.50em;
     text-align: left;
@@ -46,7 +46,7 @@
         margin: 0.5rem;
       }
       .nav-item {
-        border-top: 1px $dark-color-transparent solid;
+        border-top: 2px $dark-color-transparent solid;
         text-align: center;
       }
     }

@@ -1,5 +1,5 @@
 .about {
-  padding-bottom: 3rem;
+  padding-bottom: 0;
 }
 
 .about-icon, .about-text {
@@ -12,6 +12,10 @@
   h2 {
     text-align: left;
   }
+}
+
+.about-segment {
+  padding-bottom: 4rem;
 }
 
 @media (max-width: 767px) {
