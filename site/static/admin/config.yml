@@ -6,6 +6,7 @@ publish_mode: editorial_workflow
 # This line should *not* be indented
 media_folder: "site/static/images" # Media files will be stored in the repo under images
 public_folder: "images" # The src attribute for uploaded media will begin with /images/uploads
+site_url: https://tamperedebatesociety.fi
 slug:
   encoding: "ascii"
   clean_accents: true
@@ -19,7 +20,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Event Date", name: "eventdate", widget: "date"}
       - {label: "Image", name: "banner", widget: "image"}
-      - {label: "Link", name: "link", widget: "string"}
+      - {label: "Link (please use a shortener)", name: "link", widget: "string"}
       - {label: "Image description", name: "alt", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "front-skills" # Used in routes, e.g., /admin/collections/blog
@@ -91,10 +92,20 @@ collections:
     label: "Board members" # Used in the UI
     folder: "site/content/board-members" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}_{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Image (make sure it's 160px wide square)", name: "banner", widget: "image"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Studies", name: "studies", widget: "string"}
       - {label: "Ordinal", name: "rank", widget: "number"}
+  - name: "debating-presentations" # Used in routes, e.g., /admin/collections/blog
+    label: "Presentations" # Used in the UI
+    folder: "site/content/debating-presentations" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - {label: "File (PDF)", name: "link", widget: "file"}
+

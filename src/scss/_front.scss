@@ -34,8 +34,11 @@
 }
 
 .icon-element {
-  margin-bottom: 48px;
+  margin-bottom: 1rem;
   text-align: center;
+  h3 {
+    margin: 0.5rem 0;
+  }
 }
 
 .front-whatis {
@@ -61,5 +64,11 @@
   }
   .hierarchy {
     margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .icon-element {
+    margin-bottom: 3rem;
   }
 }

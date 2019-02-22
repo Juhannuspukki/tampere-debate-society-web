@@ -1,0 +1,43 @@
+.presentations {
+  padding-top: 5rem;
+  .presentations-card {
+    padding: 0;
+    .presentations-card-inner {
+      text-align: center;
+      margin: 1rem;
+      height: calc(100%);
+      .presentations-card-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10rem;
+        border: 2px $dark-color solid;
+        border-radius: 1rem 1rem 0 0;
+        border-bottom: none;
+        p {
+          margin: 0;
+        }
+      }
+      .presentations-card-content {
+        border: 2px $dark-color solid;
+        border-radius: 0 0 1rem 1rem;
+        height: calc(100% - 12rem);
+        padding: 1rem;
+        p {
+          padding-bottom: 1rem;
+        }
+      }
+      .link-button {
+        position: relative;
+        bottom: 4rem;
+        background-color: $dark-color;
+        border: 2px $dark-color solid;
+        width: 10rem;
+        &:hover {
+          background-color: transparent;
+          color: $dark-color;
+        }
+      }
+    }
+  }
+}

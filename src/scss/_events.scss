@@ -35,11 +35,8 @@
         border: 2px $dark-color solid;
         border-radius: 0 0 1rem 1rem;
         border-top: none;
-        padding: 0.75rem;
+        padding: 1rem;
         height: calc(100% - 16rem);
-        p {
-          margin-bottom: 2rem;
-        }
       }
       .event-card-img {
         border: 2px $dark-color solid;

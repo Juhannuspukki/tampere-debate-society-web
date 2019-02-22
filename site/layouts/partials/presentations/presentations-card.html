@@ -1,0 +1,14 @@
+<div class="presentations-card col-lg-4 col-md-6">
+  <div class="presentations-card-inner">
+    <div class="presentations-card-title">
+      <div class="presentations-card-title-container">
+        <h3>{{ .Params.Title}}</h3>
+        <p>{{ .Params.subtitle }}</p>
+      </div>
+    </div>
+    <div class="presentations-card-content">
+      <p>{{ .Content | markdownify }}</p>
+    </div>
+    <a class="btn btn-primary link-button" href="{{ .Params.Link }}" target="_blank" role="button">View PDF</a>
+  </div>
+</div>
