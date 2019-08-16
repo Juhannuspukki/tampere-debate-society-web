@@ -1,6 +1,6 @@
 ---
 title: Johtajuussymposium Debate Competition 2019
-eventdate: 2019-11-08T22:00:00.000Z
+eventdate: 2019-09-10T21:00:00.000Z
 banner: /images/johtajuussymposium_2019.jpg
 link: 'https://events.tuni.fi/johtajuussymposium2019/'
 alt: Johtajuussymposium 2019
