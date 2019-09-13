@@ -1,7 +1,7 @@
 ---
 title: FinEst 100
 eventdate: 2018-03-24T00:00:00.000Z
-banner: images/finest-100.jpg
+banner: finest-100.jpg
 link: 'https://www.facebook.com/events/146269409503775/'
 alt: Fin-Est
 ---

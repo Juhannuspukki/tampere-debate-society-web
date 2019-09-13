@@ -1,6 +1,11 @@
 <div class="event-card col-lg-6">
   <div class="event-card-inner">
-    <img class="event-card-img" src="{{ .Params.Banner }}" alt="{{ .Params.alt }}">
+    {{ $altText := .Params.alt}}
+    {{ with .Params.banner }}
+    {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+    {{ $resizedSmall := $imageResource.Resize "508x q80"}}
+    <img class="event-card-img" src="{{ $resizedSmall.RelPermalink }}" alt="{{ $altText }}">
+    {{ end }}
     <div class="event-card-content">
       <h2>{{ .Params.Title}}</h2>
       <p>{{ dateFormat "January 2, 2006" .Params.eventdate }}</p>

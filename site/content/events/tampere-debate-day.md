@@ -1,7 +1,7 @@
 ---
 title: Tampere Debate Day
 eventdate: '2018-11-17'
-banner: /images/screenshot-2018-10-24-at-2.14.53.png
+banner: screenshot-2018-10-24-at-2.14.53.png
 link: 'https://www.facebook.com/events/338379180062696/'
 alt: Tampere Debate Day
 ---

@@ -1,7 +1,7 @@
 ---
 title: Saint Petersburg Open 2019
 eventdate: 2019-04-13T17:46:58.129Z
-banner: /images/saint-petersburg.jpg
+banner: saint-petersburg.jpg
 link: 'https://www.facebook.com/events/1767586966633416/'
 alt: Saint Petersburg Open
 ---

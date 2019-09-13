@@ -1,6 +1,6 @@
 ---
 title: Debating in Tampere
-background: images/hero.jpg
+background: hero.jpg
 description: We are a Tampere University based student organization that specializes in debating. We meet every Tuesday at 17.00 at PinniB, room number 5078. Tampere Debate Society is a member of FINDA, the Finnish Debating Association.
 ---
 Debate evenings every Tuesday, 5pm.

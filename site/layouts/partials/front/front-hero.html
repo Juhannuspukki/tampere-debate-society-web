@@ -1,5 +1,8 @@
 <section class="hero front-hero">
-  <div class="front-hero-image" style="background-image: url('{{ .Params.background }}')">
+  {{ with .Params.background }}
+  {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+  <div class="front-hero-image" style="background-image: url('{{ $imageResource.RelPermalink }}')">
+  {{ end }}
     <div class="image-overlay"></div>
     <div class="description-container">
       <h1 class="main-title">{{ .Params.Title}}</h1>

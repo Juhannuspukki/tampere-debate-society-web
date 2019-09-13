@@ -1,7 +1,7 @@
 ---
 title: Helsinki Open 2018
 eventdate: 2018-05-18T00:00:00.000Z
-banner: images/Helsinki-open.jpg
+banner: Helsinki-open.jpg
 link: 'https://www.facebook.com/events/395304264264619/'
 alt: Helsinki
 ---

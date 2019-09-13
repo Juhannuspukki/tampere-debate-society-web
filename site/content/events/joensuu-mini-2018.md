@@ -1,7 +1,7 @@
 ---
 title: Joensuu Mini 2018
 eventdate: '2018-10-13'
-banner: /images/joensuumini2018.jpg
+banner: joensuumini2018.jpg
 link: 'https://www.facebook.com/events/2210201439009988/'
 alt: Joensuu Mini 2018
 ---

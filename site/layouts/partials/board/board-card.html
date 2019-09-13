@@ -1,6 +1,10 @@
 <div class="board-card col-lg-4 col-md-6">
   <div class="board-card-inner">
-    <img class="board-card-img" src="{{ .Params.Banner }}" alt="{{ .Params.alt }}">
+    {{ with .Params.Banner }}
+    {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+    {{ $resized := $imageResource.Fill "160x160" }}
+    <img class="board-card-img" src="{{ $resized.RelPermalink }}" aria-hidden="true">
+    {{ end }}
     <div class="board-card-content">
       <h3 class="board-name">{{ .Params.name}}</h3>
       <h3 class="board-title">{{ .Params.Title}}</h3>

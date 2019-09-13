@@ -9,6 +9,9 @@
     <div class="presentations-card-content">
       <p>{{ .Content | markdownify }}</p>
     </div>
-    <a class="btn btn-primary link-button" href="{{ .Params.Link }}" target="_blank" role="button">View PDF</a>
+    {{ with .Params.Link }}
+    {{ $pdfResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+    <a class="btn btn-primary link-button" href="{{ $pdfResource.RelPermalink }}" target="_blank" role="button">View PDF</a>
+    {{ end }}
   </div>
 </div>

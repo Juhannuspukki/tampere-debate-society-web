@@ -1,7 +1,7 @@
 ---
 title: FINDA Schools Cup 2018
 eventdate: '2018-10-06'
-banner: /images/findaschoolscup2018.jpg
+banner: findaschoolscup2018.jpg
 link: 'https://www.facebook.com/events/248727132445868/'
 alt: FINDA Schools Cup 2018
 ---
