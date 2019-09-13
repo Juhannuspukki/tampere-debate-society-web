@@ -6,4 +6,5 @@ description: The easiest way of contacting us is probably either facebook or sen
 # Contact
 
 If you have official business, you can send an email to the president at <mailto:arto.a.jarvela@gmail.com>.
-The Facebook group is used for communication. Please join the group if you want to stay informed about our events [here!](https://www.facebook.com/groups/tamperedebatesociety/)
+We send reminders and announcements about our events and weekly meetings on Telegram. You can join the group [here.](https://t.me/tamperedebatesociety)
+The Facebook group is also used for communication. Please join the group [here!](https://www.facebook.com/groups/tamperedebatesociety/)

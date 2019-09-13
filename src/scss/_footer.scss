@@ -8,13 +8,29 @@ footer {
   color: white;
   text-align: center;
   .footer-cell {
-    padding-bottom: 6rem;
-    .facebook-linkbutton {
+    padding-bottom: 4rem;
+    .footer-linkbutton {
+      display:inline-block;
+      margin: 2rem 0.5rem 0.5rem;
+    }
+    .facebook {
       color: #3b5998;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .telegram {
+      color: #0088cc;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .netlify-link {
+      margin-top: 1rem;
     }
     .hugo-link {
       display: block;
-      margin: 1rem auto;
+      margin: 2rem auto;
       max-width: 10rem;
     }
   }
