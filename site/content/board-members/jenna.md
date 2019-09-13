@@ -1,8 +1,8 @@
 ---
-banner: /images/female_default.png
+banner: /images/img_2092-2-.jpg
 name: Jenna Pitkälä
 title: Member of the Board
-studies: '-'
+studies: "\U0001F4DAEducation\U0001F4DA"
 rank: 8
 ---
 
