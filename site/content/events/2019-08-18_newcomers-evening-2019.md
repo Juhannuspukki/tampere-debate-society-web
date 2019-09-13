@@ -1,6 +1,6 @@
 ---
 title: Newcomers' Evening 2019
-eventdate: 2019-09-23T21:00:00.000Z
+eventdate: 2019-09-24T21:00:00.000Z
 banner: /images/newcomers_evening_2019.jpg
 link: 'https://www.facebook.com/events/965325140466928/'
 alt: Newcomer's Evening 2019

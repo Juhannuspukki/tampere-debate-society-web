@@ -1,3 +1,7 @@
+// JS Goes here - ES6 supported
+
+import "./scss/main.scss";
+
 let collapseElements = document.querySelectorAll('[data-toggle="collapse"]');
 const CLASS_SHOW = 'show';
 const CLASS_COLLAPSE = 'collapse';
