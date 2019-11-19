@@ -7,4 +7,4 @@ alt: Tampere Debate Society XMAS Party 2019
 ---
 ## Tampere Debate Society XMAS Party 2019
 
-Debating, sauna, games, swimming pool, snacks and glogg... Welcome to the annual Tampere Debate Society XMAS Sauna party, our favorite event of the year!!! Wednesday 5th of December at 6pm..
+Debating, sauna, games, swimming pool, snacks and glogg... Welcome to the annual Tampere Debate Society XMAS Sauna party, our favorite event of the year!!! Tuesday 3th of December at 6pm..
