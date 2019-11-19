@@ -1,6 +1,6 @@
 ---
 title: Tampere Debate Society XMAS Party 2019
-eventdate: 2019-12-02T22:00:00.000Z
+eventdate: 2019-12-03
 banner: /uploads/christmasparty.jpg
 link: 'https://www.facebook.com/groups/tamperedebatesociety/'
 alt: Tampere Debate Society XMAS Party 2019
