@@ -1,7 +1,7 @@
 ---
 banner: female_default.png
-name: Laura
-title: Member of the Board
+name: Edvard Heavensfire
+title: Member
 studies: '-'
 rank: 7
 ---
