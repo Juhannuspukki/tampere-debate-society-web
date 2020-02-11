@@ -5,7 +5,7 @@ backend:
 publish_mode: editorial_workflow
 # This line should *not* be indented
 media_folder: "site/content/uploads" # Media files will be stored in the repo under images
-public_folder: "uploads" # The src attribute for uploaded media will begin with /images/uploads
+public_folder: "/uploads" # The src attribute for uploaded media will begin with /images/uploads
 site_url: https://tamperedebatesociety.fi
 slug:
   encoding: "ascii"

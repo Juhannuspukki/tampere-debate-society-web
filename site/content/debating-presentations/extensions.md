@@ -1,7 +1,7 @@
 ---
 title: Extensions
 subtitle: Spring 2019
-link: prime-minister-original.pdf
+link: /uploads/prime-minister-original.pdf
 ---
 
 This presentation tells you more about debate extensions,
