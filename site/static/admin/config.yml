@@ -18,6 +18,7 @@ collections:
         name: "index"
         file: "site/content/_index.md"
         fields: # The fields for each document, usually in front matter
+          - {label: "Meta title (SEO)", name: meta_title, widget: "string"}
           - {label: "Meta description (SEO)", name: meta_description, widget: "string"}
           - {label: "Hero title", name: hero_title, widget: "string"}
           - {label: "Hero banner", name: hero_background, widget: "image"}
@@ -47,6 +48,7 @@ collections:
         name: "about"
         file: "site/content/about/_index.md"
         fields: # The fields for each document, usually in front matter
+          - {label: "Meta title (SEO)", name: meta_title, widget: "string"}
           - {label: "Meta description (SEO)", name: meta_description, widget: "string"}
           - {label: "Hero title", name: hero_title, widget: "string"}
           - {label: "About - Cards", name: about_cards, widget: list, fields: [
@@ -63,6 +65,7 @@ collections:
         name: "debating"
         file: "site/content/debating/_index.md"
         fields: # The fields for each document, usually in front matter
+          - {label: "Meta title (SEO)", name: meta_title, widget: "string"}
           - {label: "Meta description (SEO)", name: meta_description, widget: "string"}
           - {label: "Hero title", name: hero_title, widget: "string"}
           - {label: "Hero description", name: hero_description, widget: "markdown"}
@@ -86,6 +89,7 @@ collections:
         name: "contact"
         file: "site/content/contact/_index.md"
         fields: # The fields for each document, usually in front matter
+          - {label: "Meta title (SEO)", name: meta_title, widget: "string"}
           - {label: "Meta description (SEO)", name: meta_description, widget: "string"}
           - {label: "Hero title", name: title, widget: "string"}
           - {label: "Hero description", name: content, widget: "markdown"}
