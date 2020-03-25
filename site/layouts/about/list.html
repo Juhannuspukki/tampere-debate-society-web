@@ -2,12 +2,11 @@
 
 <section class="about first-section">
   <div class="container smallcontainer">
-    <h1>{{ .Params.Title}}</h1>
-    {{ .Content }}
+    <h1>{{ .Params.hero_title}}</h1>
   </div>
 </section>
 
-{{ range (.Data.Pages).ByParam "Rank" }}
+{{ range .Params.about_cards }}
   {{ partial "about/about-segment.html" . }}
 {{ end }}
 

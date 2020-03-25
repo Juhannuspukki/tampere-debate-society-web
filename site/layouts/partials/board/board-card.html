@@ -1,14 +1,12 @@
 <div class="board-card col-lg-4 col-md-6">
   <div class="board-card-inner">
-    {{ with .Params.Banner }}
-    {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+    {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .picture ) }}
     {{ $resized := $imageResource.Fill "160x160" }}
-    <img class="board-card-img" src="{{ $resized.RelPermalink }}" aria-hidden="true">
-    {{ end }}
+    <img class="board-card-img" src="{{ .picture }}" aria-hidden="true">
     <div class="board-card-content">
-      <h3 class="board-name">{{ .Params.name}}</h3>
-      <h3 class="board-title">{{ .Params.Title}}</h3>
-      <p class="board-studies">{{ .Params.studies}}</p>
+      <h3 class="board-name">{{ .name }}</h3>
+      <h3 class="board-title">{{ .position }}</h3>
+      <p class="board-studies">{{ .studies }}</p>
     </div>
   </div>
 </div>

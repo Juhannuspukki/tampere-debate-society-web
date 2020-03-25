@@ -2,12 +2,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4 about-icon">
-        <i class="fas {{ .Params.Icon }} fa-7x"></i>
+        <i class="fas {{ .icon }} fa-7x"></i>
       </div>
       <div class="col-md-8 about-text">
         <div>
-          <h2>{{ .Params.Title }}</h2>
-          {{ .Content }}
+          <h2>{{ .title }}</h2>
+          {{ .content | markdownify }}
         </div>
       </div>
     </div>

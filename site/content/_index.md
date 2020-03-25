@@ -4,7 +4,7 @@ meta_description: >-
   debating. We meet every Tuesday at 17.00 at PinniB, room number 5078. Tampere
   Debate Society is a member of FINDA, the Finnish Debating Association.
 hero_title: Debating in Tampere
-hero_background: hero.jpg
+hero_background: /uploads/hero.jpg
 hero_description_1: 'Debate evenings every Tuesday, 5pm.'
 hero_description_2: 'Pinni B, 5078, Tampere University.'
 what_is_debating_title: What is debating like?

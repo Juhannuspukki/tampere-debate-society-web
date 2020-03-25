@@ -7,3 +7,18 @@ $dark-color-transparent: #1B1B42cc;
 $light-color: #aaa;
 $white-color-transparent: #ffffffcc;
 $white-color: #fff;
+
+@font-face {
+  font-family: Graduate;
+  src: url('/fonts/Graduate-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+}

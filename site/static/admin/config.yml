@@ -40,9 +40,25 @@ collections:
           - {label: "People - Cards", name: people_cards, widget: list, fields: [
               {label: "Title", name: title, widget: "string"},
               {label: "Icon", name: icon, widget: "string"},
-              {label: "Content", name: "content", widget: "markdown"},]}
+              {label: "Content", name: content, widget: "markdown"},]}
           - {label: "Join - Title", name: join_title, widget: "string"}
           - {label: "Join - Subtitle", name: join_subtitle, widget: "markdown"}
+      - label: "About"
+        name: "about"
+        file: "site/content/about/_index.md"
+        fields: # The fields for each document, usually in front matter
+          - {label: "Meta description (SEO)", name: meta_description, widget: "string"}
+          - {label: "Hero title", name: hero_title, widget: "string"}
+          - {label: "About - Cards", name: about_cards, widget: list, fields: [
+              {label: "Title", name: title, widget: "string"},
+              {label: "Icon", name: icon, widget: "string"},
+              {label: "Content", name: content, widget: "markdown"},]}
+          - {label: "Board - Title", name: board_title, widget: "string"}
+          - {label: "Board - Members", name: board_members, widget: list, fields: [
+              {label: "Picture", name: picture, widget: "image"},
+              {label: "Name", name: name, widget: "string"},
+              {label: "Position", name: position, widget: "string"},
+              {label: "Studies", name: studies, widget: "string"},]}
   - name: "events" # Used in routes, e.g., /admin/collections/blog
     label: "Events" # Used in the UI
     folder: "site/content/events" # The path to the folder where the documents are stored
@@ -55,16 +71,6 @@ collections:
       - {label: "Link (please use a shortener)", name: "link", widget: "string"}
       - {label: "Image description", name: "alt", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "about" # Used in routes, e.g., /admin/collections/blog
-    label: "About" # Used in the UI
-    folder: "site/content/about" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Icon", name: "icon", widget: "string"}
-      - {label: "Rank", name: "rank", widget: "number"}
-      - {label: "Body", name: "body", widget: "markdown"}
   - name: "debating" # Used in routes, e.g., /admin/collections/blog
     label: "Hero (Debating)" # Used in the UI
     folder: "site/content/debating" # The path to the folder where the documents are stored
@@ -74,13 +80,6 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description (SEO)", name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "board" # Used in routes, e.g., /admin/collections/blog
-    label: "Board" # Used in the UI
-    folder: "site/content/board" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
   - name: "contact" # Used in routes, e.g., /admin/collections/blog
     label: "Contact" # Used in the UI
     folder: "site/content/contact" # The path to the folder where the documents are stored
@@ -90,17 +89,6 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description (SEO)", name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "board" # Used in routes, e.g., /admin/collections/blog
-    label: "Board members" # Used in the UI
-    folder: "site/content/board-members" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Image (make sure it's 160px wide square)", name: "banner", widget: "image"}
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Studies", name: "studies", widget: "string"}
-      - {label: "Ordinal", name: "rank", widget: "number"}
   - name: "debating-presentations" # Used in routes, e.g., /admin/collections/blog
     label: "Presentations" # Used in the UI
     folder: "site/content/debating-presentations" # The path to the folder where the documents are stored

@@ -1,14 +1,9 @@
 <section class="board last-section">
-  <h2 class="board-h1">
-    {{ range (where .Site.Pages "Section" "board") }}
-      {{ .Title }}
-    {{ end }}</h2>
+  <h2 class="board-h1">{{ .Params.board_title }}</h2>
   <div class="container">
     <div class="row">
-      {{ range (where .Site.Pages "Section" "board-members").ByParam "rank" }}
-        {{ if .Params.Title }}
-          {{ partial "board/board-card.html" . }}
-        {{ end }}
+      {{ range .Params.board_members }}
+        {{ partial "board/board-card.html" . }}
       {{ end }}
     </div>
   </div>
