@@ -2,7 +2,8 @@
 
 <section class="contact first-section last-section">
   <div class="container small-container">
-    {{ .Content }}
+    <h1>{{ .Params.Title }}</h1>
+    {{ .Params.content | markdownify }}
   </div>
 </section>
 
