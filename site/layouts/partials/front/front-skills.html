@@ -1,11 +1,11 @@
 <section class="front-skills">
   <div class="container">
     <div class="section-header">
-      <h2>Why should I debate?</h2>
-      <p>For starters, you'll learn...</p>
+      <h2>{{ .Params.skills_title }}</h2>
+      <p>{{ .Params.skills_subtitle }}</p>
     </div>
     <div class="row">
-      {{ range (where .Data.Pages "Section" "front-skills").ByParam "rank" }}
+      {{ range .Params.skills_cards }}
         {{ partial "icon-element.html" . }}
       {{ end }}
     </div>

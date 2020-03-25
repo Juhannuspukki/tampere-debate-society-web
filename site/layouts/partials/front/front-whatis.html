@@ -1,11 +1,11 @@
 <section class="front-whatis">
   <div class="container">
     <div class="section-header">
-      <h2>What is debating like?</h2>
-      <p>Our debates don't turn into shouting contests due to...</p>
+      <h2>{{ .Params.what_is_debating_title }}</h2>
+      <p>{{ .Params.what_is_debating_subtitle }}</p>
     </div>
     <div class="row">
-      {{ range (where .Data.Pages "Section" "front-whatis").ByParam "rank" }}
+      {{ range .Params.what_is_debating_cards }}
         {{ partial "icon-element.html" . }}
       {{ end }}
     </div>

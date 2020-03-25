@@ -11,6 +11,38 @@ slug:
   encoding: "ascii"
   clean_accents: true
 collections:
+  - label: "Single pages"
+    name: "pages"
+    files:
+      - label: "Front page"
+        name: "index"
+        file: "site/content/_index.md"
+        fields: # The fields for each document, usually in front matter
+          - {label: "Meta description (SEO)", name: meta_description, widget: "string"}
+          - {label: "Hero title", name: hero_title, widget: "string"}
+          - {label: "Hero banner", name: hero_background, widget: "image"}
+          - {label: "Hero description (line 1)", name: hero_description_1, widget: "string"}
+          - {label: "Hero description (line 2)", name: hero_description_2, widget: "string"}
+          - {label: "What is debating - Title", name: what_is_debating_title, widget: "string"}
+          - {label: "What is debating - Subtitle", name: what_is_debating_subtitle, widget: "string"}
+          - {label: "What is debating - Cards", name: what_is_debating_cards, widget: list, fields: [
+              {label: "Title", name: title, widget: "string"},
+              {label: "Icon", name: icon, widget: "string"},
+              {label: "Content", name: content, widget: "markdown"},]}
+          - {label: "Skills - Title", name: skills_title, widget: "string"}
+          - {label: "Skills - Subtitle", name: skills_subtitle, widget: "string"}
+          - {label: "Skills - Cards", name: skills_cards, widget: list, fields: [
+              {label: "Title", name: title, widget: "string"},
+              {label: "Icon", name: icon, widget: "string"},
+              {label: "Content", name: content, widget: "markdown"},]}
+          - {label: "People - Title", name: people_title, widget: "string"}
+          - {label: "People - Subtitle", name: people_subtitle, widget: "string"}
+          - {label: "People - Cards", name: people_cards, widget: list, fields: [
+              {label: "Title", name: title, widget: "string"},
+              {label: "Icon", name: icon, widget: "string"},
+              {label: "Content", name: "content", widget: "markdown"},]}
+          - {label: "Join - Title", name: join_title, widget: "string"}
+          - {label: "Join - Subtitle", name: join_subtitle, widget: "markdown"}
   - name: "events" # Used in routes, e.g., /admin/collections/blog
     label: "Events" # Used in the UI
     folder: "site/content/events" # The path to the folder where the documents are stored
@@ -22,36 +54,6 @@ collections:
       - {label: "Image", name: "banner", widget: "image"}
       - {label: "Link (please use a shortener)", name: "link", widget: "string"}
       - {label: "Image description", name: "alt", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "front-skills" # Used in routes, e.g., /admin/collections/blog
-    label: "Skills (front page)" # Used in the UI
-    folder: "site/content/front-skills" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Icon", name: "icon", widget: "string"}
-      - {label: "Rank", name: "rank", widget: "number"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "front-people" # Used in routes, e.g., /admin/collections/blog
-    label: "People (front page)" # Used in the UI
-    folder: "site/content/front-people" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Icon", name: "icon", widget: "string"}
-      - {label: "Rank", name: "rank", widget: "number"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "front-whatis" # Used in routes, e.g., /admin/collections/blog
-    label: "What is debating (front page)" # Used in the UI
-    folder: "site/content/front-whatis" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Icon", name: "icon", widget: "string"}
-      - {label: "Rank", name: "rank", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "about" # Used in routes, e.g., /admin/collections/blog
     label: "About" # Used in the UI

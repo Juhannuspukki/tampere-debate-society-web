@@ -1,11 +1,11 @@
 <section class="front-people">
   <div class="container">
     <div class="section-header">
-      <h2>Still not convinced?</h2>
-      <p>You'll also:</p>
+      <h2>{{ .Params.people_title }}</h2>
+      <p>{{ .Params.people_subtitle }}</p>
     </div>
     <div class="row">
-      {{ range (where .Data.Pages "Section" "front-people").ByParam "rank" }}
+      {{ range .Params.people_cards }}
         {{ partial "icon-element.html" . }}
       {{ end }}
     </div>
