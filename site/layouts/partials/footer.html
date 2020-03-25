@@ -1,12 +1,20 @@
 <footer>
   <div class="container">
     <div class="row">
-      {{ range (last 3 (where .Site.Pages "Section" "footer")).ByParam "rank" }}
+      {{ $headless := .Site.GetPage "/headless_data" }}
+      {{ $reusablePages := $headless.Resources.GetMatch (strings.TrimPrefix "/headless_data/" "footer.md" ) }}
       <div class="col-md-4 footer-cell">
-        <h3>{{ with .Params.Title }}{{ . | safeHTML }}{{ end }}</h3>
-        {{ .Content }}
+        <h3>{{ $reusablePages.Params.left_title }}</h3>
+        {{ $reusablePages.Params.left_content | markdownify }}
       </div>
-      {{ end }}
+      <div class="col-md-4 footer-cell">
+        <h3>{{ $reusablePages.Params.center_title }}</h3>
+        {{ $reusablePages.Params.center_content | markdownify }}
+      </div>
+      <div class="col-md-4 footer-cell">
+        <h3>{{ $reusablePages.Params.right_title }}</h3>
+        {{ $reusablePages.Params.right_content | markdownify }}
+      </div>
     </div>
   </div>
 </footer>
