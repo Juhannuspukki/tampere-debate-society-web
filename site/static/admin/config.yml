@@ -101,13 +101,16 @@ collections:
       - {label: "Link (please use a shortener)", name: "link", widget: "string"}
       - {label: "Image description", name: "alt", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - label: "Footer"
-    name: "footer"
-    file: "site/content/headless_data/footer.md"
-    fields:
-      - {label: "Title - Left", name: "left_title", widget: "string"}
-      - {label: "Content - Left", name: "left_content", widget: "markdown"}
-      - {label: "Title - Center", name: "center_title", widget: "string"}
-      - {label: "Content - Center", name: "center_content", widget: "markdown"}
-      - {label: "Title - Right", name: "right_title", widget: "string"}
-      - {label: "Content - Right", name: "right_content", widget: "markdown"}
+  - label: "Headless data"
+    name: "headless-data"
+    files:
+      - label: "Footer"
+        name: "footer"
+        file: "site/content/headless_data/footer.md"
+        fields:
+          - {label: "Title - Left", name: "left_title", widget: "string"}
+          - {label: "Content - Left", name: "left_content", widget: "markdown"}
+          - {label: "Title - Center", name: "center_title", widget: "string"}
+          - {label: "Content - Center", name: "center_content", widget: "markdown"}
+          - {label: "Title - Right", name: "right_title", widget: "string"}
+          - {label: "Content - Right", name: "right_content", widget: "markdown"}
