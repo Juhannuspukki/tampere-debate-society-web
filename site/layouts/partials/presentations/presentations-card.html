@@ -2,16 +2,13 @@
   <div class="presentations-card-inner">
     <div class="presentations-card-title">
       <div class="presentations-card-title-container">
-        <h3>{{ .Params.Title}}</h3>
-        <p>{{ .Params.subtitle }}</p>
+        <h3>{{ .title}}</h3>
+        <p>{{ .subtitle }}</p>
       </div>
     </div>
     <div class="presentations-card-content">
-      <p>{{ .Content | markdownify }}</p>
+      <p>{{ .content | markdownify }}</p>
     </div>
-    {{ with .Params.Link }}
-    {{ $pdfResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
-    <a class="btn btn-primary link-button" href="{{ $pdfResource.RelPermalink }}" target="_blank" role="button">View PDF</a>
-    {{ end }}
+    <a class="btn btn-primary link-button" href="{{ .link }}" target="_blank" role="button">View PDF</a>
   </div>
 </div>

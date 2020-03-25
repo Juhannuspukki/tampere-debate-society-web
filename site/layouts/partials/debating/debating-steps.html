@@ -1,15 +1,15 @@
 <section class="steps">
   <div class="container">
     <div class="section-header">
-      <h2>I'm not clicking that. It's suspicious.</h2>
-      <p>Allright, allright. Have a TL;DR:</p>
+      <h2>{{ .Params.steps_title }}</h2>
+      <p>{{ .Params.steps_subtitle }}</p>
     </div>
     <div class="row">
-      {{ range first 6 ((where .Site.Pages "Section" "debating-steps").ByParam "rank") }}
+      {{ range .Params.steps_content }}
       <div class="col-md-4 icon-element">
-        <p class="number">{{ .Params.Rank }}</p>
-        <h3>{{ with .Params.Title }}{{ . | safeHTML }}{{ end }}</h3>
-        {{ .Content }}
+        <p class="number">{{ .rank }}</p>
+        <h3>{{ .title }}</h3>
+        {{ .content | markdownify }}
       </div>
       {{ end }}
     </div>

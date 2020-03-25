@@ -1,15 +1,12 @@
 <section class="presentations last-section">
   <div class="container">
     <div class="section-header">
-      <h2>Presentations</h2>
-      <p>At the beginning of almost every debate, we have a presentation about a particular role or subject. Here you
-        can find the best of our presentations.</p>
+      <h2>{{ .Params.presentations_title }}</h2>
+      <p>{{ .Params.presentations_subtitle }}</p>
     </div>
     <div class="row">
-      {{ range ((where .Site.Pages "Section" "debating-presentations").ByParam "rank") }}
-        {{ if .Params.Title }}
-          {{ partial "presentations/presentations-card.html" . }}
-        {{ end }}
+      {{ range .Params.presentations_content }}
+        {{ partial "presentations/presentations-card.html" . }}
       {{ end }}
     </div>
   </div>
