@@ -1,0 +1,36 @@
+baseurl = "/"
+languageCode = "en-us"
+languageLang = "en"
+title = "Tampere Debate Society"
+sectionPagesMenu = "nav"
+summaryLength = 50
+
+[menu]
+    [[menu.nav]]
+        identifier = "about"
+        name = "About us"
+        url = "/about"
+        weight = 1
+    [[menu.nav]]
+        identifier = "debating"
+        name = "Debating"
+        url = "/debating"
+        weight = 2
+    [[menu.nav]]
+        identifier = "events"
+        name = "Events"
+        url = "/events"
+        weight = 3
+    [[menu.nav]]
+        identifier = "contact"
+        name = "Contact"
+        url = "/contact"
+        weight = 4
+
+[markup.goldmark.renderer]
+  unsafe=true
+
+# RSS, categories and tags disabled for an easy start
+# See configuration options for more details:
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
