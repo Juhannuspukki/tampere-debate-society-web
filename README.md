@@ -1,7 +1,5 @@
-# Tampere debate societys new website
+# Tampere debate society website
 
-Made with victor-hugo using npm, gulp and webpack. Gulp-sass is used to compile scss to css.
+Made with Hugo 71.1
 
-Setup with `npm install`
-
-Run server with `npm start`
+https://gohugo.io
