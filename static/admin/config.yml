@@ -4,7 +4,7 @@ backend:
 # This line should *not* be indented
 publish_mode: editorial_workflow
 # This line should *not* be indented
-media_folder: "site/content/uploads" # Media files will be stored in the repo under images
+media_folder: "content/uploads" # Media files will be stored in the repo under images
 public_folder: "/uploads" # The src attribute for uploaded media will begin with /images/uploads
 site_url: https://tamperedebatesociety.fi
 slug:
@@ -16,7 +16,7 @@ collections:
     files:
       - label: "Front page"
         name: "index"
-        file: "site/content/_index.md"
+        file: "content/_index.md"
         fields: # The fields for each document, usually in front matter
           - {label: "Meta title (SEO)", name: meta_title, widget: "string"}
           - {label: "Meta description (SEO)", name: meta_description, widget: "string"}
@@ -46,7 +46,7 @@ collections:
           - {label: "Join - Subtitle", name: join_subtitle, widget: "markdown"}
       - label: "About"
         name: "about"
-        file: "site/content/about/_index.md"
+        file: "content/about/_index.md"
         fields: # The fields for each document, usually in front matter
           - {label: "Meta title (SEO)", name: meta_title, widget: "string"}
           - {label: "Meta description (SEO)", name: meta_description, widget: "string"}
@@ -63,7 +63,7 @@ collections:
               {label: "Studies", name: studies, widget: "string"},]}
       - label: "Debating"
         name: "debating"
-        file: "site/content/debating/_index.md"
+        file: "content/debating/_index.md"
         fields: # The fields for each document, usually in front matter
           - {label: "Meta title (SEO)", name: meta_title, widget: "string"}
           - {label: "Meta description (SEO)", name: meta_description, widget: "string"}
@@ -87,7 +87,7 @@ collections:
               {label: "Content", name: content, widget: "markdown"},]}
       - label: "Contact"
         name: "contact"
-        file: "site/content/contact/_index.md"
+        file: "content/contact/_index.md"
         fields: # The fields for each document, usually in front matter
           - {label: "Meta title (SEO)", name: meta_title, widget: "string"}
           - {label: "Meta description (SEO)", name: meta_description, widget: "string"}
@@ -95,7 +95,7 @@ collections:
           - {label: "Hero description", name: content, widget: "markdown"}
   - name: "events" # Used in routes, e.g., /admin/collections/blog
     label: "Event posts" # Used in the UI
-    folder: "site/content/events" # The path to the folder where the documents are stored
+    folder: "content/events" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}_{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -110,7 +110,7 @@ collections:
     files:
       - label: "Footer"
         name: "footer"
-        file: "site/content/headless_data/footer.md"
+        file: "content/headless_data/footer.md"
         fields:
           - {label: "Title - Left", name: "left_title", widget: "string"}
           - {label: "Content - Left", name: "left_content", widget: "markdown"}
