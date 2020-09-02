@@ -10,15 +10,18 @@ $white-color: #fff;
 
 @font-face {
   font-family: Graduate;
+  font-display: fallback;
   src: url('/fonts/Graduate-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: Montserrat;
+  font-display: fallback;
   src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: Montserrat-Bold;
+  font-display: fallback;
   src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
 }
